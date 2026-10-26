@@ -1,0 +1,398 @@
+
+/* =========================
+   1. CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-fundo: #ffffff;
+  --cor-texto: #202024;
+  --cor-destaque: #e53935;
+  --cor-secundaria: #f5f5f5;
+  --cor-cinza: #777777;
+  --cor-borda: #e8e8e8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =========================
+   2. CABEÇALHO
+========================= */
+
+.cabecalho {
+  padding: 0 20px;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.cabecalho-topo {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -2px;
+  white-space: nowrap;
+}
+
+.logo span {
+  color: var(--cor-destaque);
+}
+
+.data {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--cor-cinza);
+}
+
+.botao-assinar {
+  padding: 11px 16px;
+  background: var(--cor-texto);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: background 0.2s ease;
+}
+
+.botao-assinar:hover {
+  background: var(--cor-destaque);
+}
+
+.navegacao {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.navegacao a {
+  padding: 15px 0;
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--cor-cinza);
+  border-bottom: 2px solid transparent;
+}
+
+.navegacao a:hover,
+.navegacao a.ativo {
+  color: var(--cor-texto);
+  border-bottom-color: var(--cor-destaque);
+}
+
+/* =========================
+   3. INTRODUÇÃO
+========================= */
+
+main {
+  width: min(100% - 40px, 1200px);
+  margin: 0 auto;
+}
+
+.introducao {
+  padding: 60px 0 50px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 32px;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.etiqueta {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: var(--cor-destaque);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.introducao h1 {
+  font-size: clamp(2.3rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -3px;
+}
+
+.introducao h1 span {
+  color: var(--cor-destaque);
+}
+
+.introducao > p {
+  max-width: 300px;
+  padding-bottom: 6px;
+  color: var(--cor-cinza);
+  font-size: 0.95rem;
+}
+
+/* =========================
+   4. ÁREA DE NOTÍCIAS
+========================= */
+
+.area-noticias {
+  padding: 40px 0 60px;
+}
+
+.titulo-secao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 24px;
+}
+
+.titulo-secao h2 {
+  font-size: 1.5rem;
+  letter-spacing: -0.8px;
+}
+
+.titulo-secao > span {
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  color: var(--cor-cinza);
+}
+
+.grade-noticias {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.noticia {
+  min-width: 0;
+}
+
+.imagem-noticia {
+  min-height: 210px;
+  position: relative;
+  display: flex;
+  align-items: end;
+  padding: 18px;
+  overflow: hidden;
+  background-color: #dedede;
+  background-size: cover;
+  background-position: center;
+}
+
+.imagem-principal {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 55%), transparent 70%),
+    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85");
+}
+
+.imagem-tecnologia {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 45%), transparent 70%),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85");
+}
+
+.imagem-cultura {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 45%), transparent 70%),
+    url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=85");
+}
+
+.categoria {
+  display: inline-block;
+  padding: 6px 10px;
+  background: var(--cor-destaque);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.conteudo-noticia {
+  padding-top: 18px;
+}
+
+.editoria {
+  color: var(--cor-destaque);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.conteudo-noticia h3 {
+  margin-top: 8px;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+
+.noticia-principal .conteudo-noticia h3 {
+  font-size: 1.8rem;
+}
+
+.conteudo-noticia p {
+  margin-top: 10px;
+  color: var(--cor-cinza);
+  font-size: 0.9rem;
+}
+
+/* =========================
+   5. RODAPÉ
+========================= */
+
+.rodape {
+  border-top: 1px solid var(--cor-borda);
+  padding: 28px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.rodape .logo {
+  font-size: 1.5rem;
+}
+
+.rodape p {
+  color: var(--cor-cinza);
+  font-size: 0.75rem;
+}
+
+/* =========================
+   6. TABLETS
+========================= */
+
+@media (min-width: 600px) {
+  .grade-noticias {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .noticia-principal {
+    grid-column: 1 / -1;
+  }
+
+  .noticia-principal .imagem-noticia {
+    min-height: 340px;
+  }
+
+  .imagem-noticia {
+    min-height: 240px;
+  }
+}
+
+/* =========================
+   7. DESKTOP
+========================= */
+
+@media (min-width: 1024px) {
+  .cabecalho {
+    padding: 0 32px;
+  }
+
+  main {
+    width: min(100% - 64px, 1200px);
+  }
+
+  .introducao {
+    padding: 75px 0 60px;
+  }
+
+  .grade-noticias {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    align-items: start;
+    gap: 28px;
+  }
+
+  .noticia-principal {
+    grid-column: auto;
+  }
+
+  .noticia-principal .imagem-noticia,
+  .imagem-noticia {
+    min-height: 260px;
+  }
+
+  .noticia-principal .conteudo-noticia h3 {
+    font-size: 1.6rem;
+  }
+
+  .conteudo-noticia h3 {
+    font-size: 1.15rem;
+  }
+
+  .rodape {
+    padding-left: max(32px, calc((100% - 1200px) / 2));
+    padding-right: max(32px, calc((100% - 1200px) / 2));
+  }
+}
+
+/* =========================
+   8. CELULARES PEQUENOS
+========================= */
+
+@media (max-width: 400px) {
+  .cabecalho-topo {
+    min-height: 75px;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 1.7rem;
+  }
+
+  .data {
+    display: none;
+  }
+
+  .botao-assinar {
+    padding: 9px 10px;
+    font-size: 0.7rem;
+  }
+
+  .introducao {
+    padding: 42px 0 35px;
+    flex-direction: column;
+    align-items: start;
+    gap: 18px;
+  }
+
+  .introducao h1 {
+    font-size: 2.4rem;
+    letter-spacing: -1.8px;
+  }
+
+  .titulo-secao > span {
+    font-size: 0.55rem;
+  }
+
+  .rodape {
+    align-items: start;
+    flex-direction: column;
+  }
+}
