@@ -396,3 +396,280 @@ main {
     flex-direction: column;
   }
 }
+
+
+/* =========================
+   9. SEÇÕES DO PORTAL
+========================= */
+
+.secao {
+  padding: 44px 0;
+  border-bottom: 1px solid var(--cor-borda);
+  scroll-margin-top: 20px;
+}
+
+.sobretitulo {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--cor-destaque);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.titulo-secao > div h2 {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.grade-destaques {
+  margin-top: 0;
+}
+
+.secao .grade-noticias {
+  row-gap: 34px;
+}
+
+.secao .noticia {
+  transition: transform 0.25s ease;
+}
+
+.secao .noticia:hover {
+  transform: translateY(-4px);
+}
+
+.secao .imagem-noticia {
+  display: flex;
+  min-height: 220px;
+  border-radius: 2px;
+  transition: filter 0.25s ease;
+}
+
+.secao .imagem-noticia:hover {
+  filter: brightness(0.9);
+}
+
+.secao .noticia-principal .imagem-noticia {
+  min-height: 280px;
+}
+
+/* =========================
+   10. IMAGENS DAS EDITORIAS
+========================= */
+
+.foto-mundo {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1000&q=85");
+}
+
+.foto-tecnologia {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85");
+}
+
+.foto-negocios {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=85");
+}
+
+.foto-ciencia {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=900&q=85");
+}
+
+.foto-cultura {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=85");
+}
+
+.foto-trabalho {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85");
+}
+
+.foto-cidade {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=900&q=85");
+}
+
+.foto-global {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=900&q=85");
+}
+
+.foto-comunidade {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=900&q=85");
+}
+
+.foto-ia {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=85");
+}
+
+.foto-codigo {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=85");
+}
+
+.foto-seguranca {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=900&q=85");
+}
+
+.foto-mercado {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=85");
+}
+
+.foto-empreender {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85");
+}
+
+.foto-carreira {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=85");
+}
+
+.foto-arte {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=900&q=85");
+}
+
+.foto-musica {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=85");
+}
+
+.foto-livros {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=900&q=85");
+}
+
+.foto-espaco {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=900&q=85");
+}
+
+.foto-natureza {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=85");
+}
+
+.foto-laboratorio {
+  background-image:
+    linear-gradient(0deg, rgb(0 0 0 / 35%), transparent 65%),
+    url("https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=900&q=85");
+}
+
+/* =========================
+   11. CHAMADA FINAL
+========================= */
+
+.chamada-final {
+  margin: 45px 0;
+  padding: 45px 28px;
+  background: var(--cor-texto);
+  color: white;
+}
+
+.chamada-final h2 {
+  margin: 8px 0 24px;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.chamada-final .botao-assinar {
+  display: inline-block;
+  background: var(--cor-destaque);
+}
+
+.chamada-final .botao-assinar:hover {
+  background: white;
+  color: var(--cor-texto);
+}
+
+/* =========================
+   12. RESPONSIVIDADE EXTRA
+========================= */
+
+@media (min-width: 600px) {
+  .secao .grade-noticias {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .secao .noticia-principal {
+    grid-column: 1 / -1;
+  }
+
+  .secao .noticia-principal .imagem-noticia {
+    min-height: 340px;
+  }
+
+  .chamada-final {
+    padding: 55px 45px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .secao .grade-noticias {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .secao .noticia-principal {
+    grid-column: auto;
+  }
+
+  .secao .noticia-principal .imagem-noticia,
+  .secao .imagem-noticia {
+    min-height: 240px;
+  }
+
+  .chamada-final {
+    padding: 65px;
+  }
+}
+
+@media (max-width: 400px) {
+  .secao {
+    padding: 32px 0;
+  }
+
+  .titulo-secao {
+    align-items: start;
+  }
+
+  .titulo-secao > div h2 {
+    font-size: 1.5rem;
+  }
+
+  .secao .imagem-noticia {
+    min-height: 190px;
+  }
+
+  .chamada-final {
+    padding: 32px 22px;
+  }
+}

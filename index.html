@@ -4,24 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The Daily — notícias, tecnologia, cultura e atualidades.">
-  <title>The Daily — Notícias</title>
+  <meta name="description" content="The Daily: notícias de tecnologia, mundo, negócios, cultura e ciência.">
+  <title>The Daily — Notícias que importam</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header class="cabecalho">
     <div class="cabecalho-topo">
-      <a href="#" class="logo" aria-label="The Daily - Página inicial">
-        The<span>Daily.</span>
-      </a>
-
+      <a href="#" class="logo">The<span>Daily.</span></a>
       <p class="data">INFORMAÇÃO EM MOVIMENTO</p>
-
       <a href="#ultimas" class="botao-assinar">Explorar notícias ↗</a>
     </div>
 
     <nav class="navegacao" aria-label="Navegação principal">
-      <a href="#ultimas" class="ativo">Início</a>
+      <a href="#" class="ativo">Início</a>
       <a href="#mundo">Mundo</a>
       <a href="#tecnologia">Tecnologia</a>
       <a href="#negocios">Negócios</a>
@@ -31,68 +28,347 @@
   </header>
 
   <main>
-    <section class="introducao" id="ultimas">
+    <!-- ABERTURA -->
+    <section class="introducao">
       <div>
-        <span class="etiqueta">EDIÇÃO DIGITAL</span>
+        <span class="etiqueta">SEU RESUMO DO MUNDO</span>
         <h1>O mundo acontece.<br><span>A gente conta.</span></h1>
       </div>
-
-      <p>
-        Notícias, ideias e perspectivas para você entender
-        o que realmente importa.
-      </p>
+      <p>Notícias, ideias e perspectivas para você entender o que realmente importa.</p>
     </section>
 
-    <section class="area-noticias" aria-label="Destaques">
+    <!-- DESTAQUES -->
+    <section class="secao" id="ultimas">
       <div class="titulo-secao">
-        <h2>Em destaque</h2>
-        <span>01 — NOTÍCIAS DO DIA</span>
+        <div>
+          <span class="sobretitulo">O QUE MERECE SUA ATENÇÃO</span>
+          <h2>Em destaque</h2>
+        </div>
+        <span>01 — DESTAQUES</span>
+      </div>
+
+      <div class="grade-noticias grade-destaques">
+        <article class="noticia noticia-principal">
+          <a href="#mundo" class="imagem-noticia foto-mundo" aria-label="Ler notícias sobre o mundo">
+            <span class="categoria">MUNDO</span>
+          </a>
+          <div class="conteudo-noticia">
+            <span class="editoria">CENÁRIO GLOBAL • 6 MIN</span>
+            <h3>Um mundo em transformação: os acontecimentos que merecem atenção</h3>
+            <p>Entenda as mudanças políticas, sociais e econômicas que ajudam a explicar o cenário internacional.</p>
+          </div>
+        </article>
+
+        <article class="noticia">
+          <a href="#tecnologia" class="imagem-noticia foto-tecnologia" aria-label="Ler notícias sobre tecnologia">
+            <span class="categoria">TECNOLOGIA</span>
+          </a>
+          <div class="conteudo-noticia">
+            <span class="editoria">INOVAÇÃO • 4 MIN</span>
+            <h3>As novas tecnologias que estão mudando nossa rotina</h3>
+          </div>
+        </article>
+
+        <article class="noticia">
+          <a href="#negocios" class="imagem-noticia foto-negocios" aria-label="Ler notícias sobre negócios">
+            <span class="categoria">NEGÓCIOS</span>
+          </a>
+          <div class="conteudo-noticia">
+            <span class="editoria">MERCADO • 5 MIN</span>
+            <h3>As tendências que movimentam o mercado e o trabalho</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ÚLTIMAS NOTÍCIAS -->
+    <section class="secao">
+      <div class="titulo-secao">
+        <div>
+          <span class="sobretitulo">ACOMPANHE O QUE ACONTECE</span>
+          <h2>Últimas notícias</h2>
+        </div>
+        <span>02 — AGORA</span>
       </div>
 
       <div class="grade-noticias">
-        <article class="noticia noticia-principal">
-          <div class="imagem-noticia imagem-principal">
-            <span class="categoria">DESTAQUE</span>
-          </div>
-
+        <article class="noticia">
+          <a href="#ciencia" class="imagem-noticia foto-ciencia" aria-label="Ver conteúdo de ciência">
+            <span class="categoria">CIÊNCIA</span>
+          </a>
           <div class="conteudo-noticia">
-            <span class="editoria">ANÁLISE • 6 MIN DE LEITURA</span>
-            <h3>As transformações que estão moldando o nosso futuro</h3>
-            <p>
-              Uma visão sobre as mudanças, as ideias e as tendências
-              que ajudam a explicar o mundo de hoje.
-            </p>
+            <span class="editoria">DESCOBERTAS • 4 MIN</span>
+            <h3>Pesquisas ampliam as fronteiras do conhecimento científico</h3>
+            <p>Descobertas e estudos ajudam a responder perguntas sobre o universo e a vida.</p>
           </div>
         </article>
 
         <article class="noticia">
-          <div class="imagem-noticia imagem-tecnologia">
-            <span class="categoria">TECNOLOGIA</span>
-          </div>
-
-          <div class="conteudo-noticia">
-            <span class="editoria">INOVAÇÃO • 4 MIN</span>
-            <h3>Como a tecnologia está redefinindo a vida cotidiana</h3>
-          </div>
-        </article>
-
-        <article class="noticia">
-          <div class="imagem-noticia imagem-cultura">
+          <a href="#cultura" class="imagem-noticia foto-cultura" aria-label="Ver conteúdo de cultura">
             <span class="categoria">CULTURA</span>
-          </div>
-
+          </a>
           <div class="conteudo-noticia">
             <span class="editoria">COMPORTAMENTO • 5 MIN</span>
-            <h3>Novas perspectivas sobre a cultura contemporânea</h3>
+            <h3>Como novas ideias influenciam a cultura contemporânea</h3>
+            <p>Arte, entretenimento e comportamento em uma sociedade conectada.</p>
+          </div>
+        </article>
+
+        <article class="noticia">
+          <a href="#negocios" class="imagem-noticia foto-trabalho" aria-label="Ver conteúdo sobre trabalho">
+            <span class="categoria">CARREIRA</span>
+          </a>
+          <div class="conteudo-noticia">
+            <span class="editoria">MERCADO DE TRABALHO • 3 MIN</span>
+            <h3>As habilidades que ganham espaço em um mercado em evolução</h3>
+            <p>Conhecimento, adaptação e novas ferramentas transformam as profissões.</p>
           </div>
         </article>
       </div>
+    </section>
+
+    <!-- MUNDO -->
+    <section class="secao" id="mundo">
+      <div class="titulo-secao">
+        <div>
+          <span class="sobretitulo">ALÉM DAS FRONTEIRAS</span>
+          <h2>Mundo</h2>
+        </div>
+        <span>03 — INTERNACIONAL</span>
+      </div>
+
+      <div class="grade-noticias">
+        <article class="noticia">
+          <a href="#mundo" class="imagem-noticia foto-cidade" aria-label="Cidades pelo mundo">
+            <span class="categoria">SOCIEDADE</span>
+          </a>
+          <div class="conteudo-noticia">
+            <span class="editoria">CIDADES • 5 MIN</span>
+            <h3>Como as grandes cidades estão pensando o futuro urbano</h3>
+            <p>Mobilidade, infraestrutura e qualidade de vida entram no centro do debate.</p>
+          </div>
+        </article>
+
+        <article class="noticia">
+          <a href="#mundo" class="imagem-noticia foto-global" aria-label="Economia global">
+            <span class="categoria">GEOPOLÍTICA</span>
+          </a>
+          <div class="conteudo-noticia">
+            <span class="editoria">ANÁLISE • 6 MIN</span>
+            <h3>As relações internacionais em um cenário de mudanças</h3>
+            <p>Uma análise dos desafios e das oportunidades na cooperação entre países.</p>
+          </div>
+        </article>
+
+        <article class="noticia">
+          <a href="#mundo" class="imagem-noticia foto-comunidade" aria-label="Comunidades">
+            <span class="categoria">SOCIEDADE</span>
+          </a>
+          <div class="conteudo-noticia">
+            <span class="editoria">PERSPECTIVAS • 4 MIN</span>
+            <h3>Iniciativas locais que buscam transformar comunidades</h3>
+            <p>Projetos coletivos mostram diferentes caminhos para enfrentar desafios sociais.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TECNOLOGIA -->
+    <section class="secao" id="tecnologia">
+      <div class="titulo-secao">
+        <div>
+          <span class="sobretitulo">O FUTURO ESTÁ EM CONSTRUÇÃO</span>
+          <h2>Tecnologia</h2>
+        </div>
+        <span>04 — INOVAÇÃO</span>
+      </div>
+
+      <div class="grade-noticias">
+        <article class="noticia">
+          <a href="#tecnologia" class="imagem-noticia foto-ia" aria-label="Inteligência artificial">
+            <span class="categoria">INTELIGÊNCIA ARTIFICIAL</span>
+          </a>
+          <div class="conteudo-noticia">
+            <span class="editoria">IA • 6 MIN</span>
+            <h3>Inteligência artificial: possibilidades, limites e desafios</h3>
+            <p>Como ferramentas inteligentes estão sendo incorporadas a diferentes atividades.</p>
+          </div>
+        </article>
+
+        <article class="noticia">
+          <a href="#tecnologia" class="imagem-noticia foto-codigo" aria-label="Programação">
+            <span class="categoria">DESENVOLVIMENTO</span>
+          </a>
+          <div class="conteudo-noticia">
+            <span class="editoria">PROGRAMAÇÃO • 4 MIN</span>
+            <h3>O que está mudando no universo do desenvolvimento de software</h3>
+            <p>Novas ferramentas e práticas influenciam a rotina de quem cria aplicações.</p>
+          </div>
+        </article>
+
+        <article class="noticia">
+          <a href="#tecnologia" class="imagem-noticia foto-seguranca" aria-label="Segurança digital">
+            <span class="categoria">SEGURANÇA DIGITAL</span>
+          </a>
+          <div class="conteudo-noticia">
+            <span class="editoria">CIBERSEGURANÇA • 5 MIN</span>
+            <h3>Por que proteger dados se tornou essencial no mundo conectado</h3>
+            <p>Boas práticas digitais ajudam a reduzir riscos e proteger informações.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- NEGÓCIOS -->
+    <section class="secao" id="negocios">
+      <div class="titulo-secao">
+        <div>
+          <span class="sobretitulo">MERCADO E OPORTUNIDADES</span>
+          <h2>Negócios</h2>
+        </div>
+        <span>05 — ECONOMIA</span>
+      </div>
+
+      <div class="grade-noticias">
+        <article class="noticia">
+          <a href="#negocios" class="imagem-noticia foto-mercado" aria-label="Mercado financeiro">
+            <span class="categoria">ECONOMIA</span>
+          </a>
+          <div class="conteudo-noticia">
+            <span class="editoria">MERCADO • 5 MIN</span>
+            <h3>Entenda os fatores que influenciam as decisões econômicas</h3>
+            <p>Indicadores e tendências ajudam a interpretar o cenário dos negócios.</p>
+          </div>
+        </article>
+
+        <article class="noticia">
+          <a href="#negocios" class="imagem-noticia foto-empreender" aria-label="Empreendedorismo">
+            <span class="categoria">EMPREENDEDORISMO</span>
+          </a>
+          <div class="conteudo-noticia">
+            <span class="editoria">INICIATIVAS • 4 MIN</span>
+            <h3>Da ideia à prática: os desafios de criar um negócio</h3>
+            <p>Planejamento e aprendizado fazem parte da jornada empreendedora.</p>
+          </div>
+        </article>
+
+        <article class="noticia">
+          <a href="#negocios" class="imagem-noticia foto-carreira" aria-label="Carreira profissional">
+            <span class="categoria">CARREIRA</span>
+          </a>
+          <div class="conteudo-noticia">
+            <span class="editoria">TRABALHO • 4 MIN</span>
+            <h3>Como as empresas estão repensando suas formas de trabalhar</h3>
+            <p>Modelos de trabalho e competências profissionais continuam evoluindo.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CULTURA -->
+    <section class="secao" id="cultura">
+      <div class="titulo-secao">
+        <div>
+          <span class="sobretitulo">IDEIAS, ARTE E COMPORTAMENTO</span>
+          <h2>Cultura</h2>
+        </div>
+        <span>06 — ESTILO DE VIDA</span>
+      </div>
+
+      <div class="grade-noticias">
+        <article class="noticia">
+          <a href="#cultura" class="imagem-noticia foto-arte" aria-label="Arte">
+            <span class="categoria">ARTE</span>
+          </a>
+          <div class="conteudo-noticia">
+            <span class="editoria">EXPRESSÃO • 4 MIN</span>
+            <h3>Como a arte abre espaço para novas perspectivas</h3>
+            <p>Expressões artísticas ajudam a contar histórias e provocar reflexões.</p>
+          </div>
+        </article>
+
+        <article class="noticia">
+          <a href="#cultura" class="imagem-noticia foto-musica" aria-label="Música">
+            <span class="categoria">MÚSICA</span>
+          </a>
+          <div class="conteudo-noticia">
+            <span class="editoria">CENA MUSICAL • 3 MIN</span>
+            <h3>A diversidade sonora que movimenta a música atual</h3>
+            <p>Artistas e estilos diferentes ampliam as possibilidades de criação.</p>
+          </div>
+        </article>
+
+        <article class="noticia">
+          <a href="#cultura" class="imagem-noticia foto-livros" aria-label="Livros e literatura">
+            <span class="categoria">LITERATURA</span>
+          </a>
+          <div class="conteudo-noticia">
+            <span class="editoria">LEITURA • 4 MIN</span>
+            <h3>Por que as histórias continuam conectando gerações</h3>
+            <p>Livros e narrativas seguem abrindo janelas para outras experiências.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CIÊNCIA -->
+    <section class="secao" id="ciencia">
+      <div class="titulo-secao">
+        <div>
+          <span class="sobretitulo">CONHECIMENTO EM MOVIMENTO</span>
+          <h2>Ciência</h2>
+        </div>
+        <span>07 — DESCOBERTAS</span>
+      </div>
+
+      <div class="grade-noticias">
+        <article class="noticia">
+          <a href="#ciencia" class="imagem-noticia foto-espaco" aria-label="Exploração espacial">
+            <span class="categoria">ESPAÇO</span>
+          </a>
+          <div class="conteudo-noticia">
+            <span class="editoria">ASTRONOMIA • 5 MIN</span>
+            <h3>Explorar o espaço continua ampliando as perguntas da ciência</h3>
+            <p>Missões e observações ajudam a investigar os mistérios do universo.</p>
+          </div>
+        </article>
+
+        <article class="noticia">
+          <a href="#ciencia" class="imagem-noticia foto-natureza" aria-label="Natureza">
+            <span class="categoria">MEIO AMBIENTE</span>
+          </a>
+          <div class="conteudo-noticia">
+            <span class="editoria">PLANETA • 5 MIN</span>
+            <h3>O papel da pesquisa na compreensão das mudanças ambientais</h3>
+            <p>Dados científicos ajudam a entender os desafios e orientar decisões.</p>
+          </div>
+        </article>
+
+        <article class="noticia">
+          <a href="#ciencia" class="imagem-noticia foto-laboratorio" aria-label="Pesquisa científica">
+            <span class="categoria">PESQUISA</span>
+          </a>
+          <div class="conteudo-noticia">
+            <span class="editoria">DESCOBERTAS • 4 MIN</span>
+            <h3>Como o método científico transforma perguntas em conhecimento</h3>
+            <p>Observação, testes e análise são fundamentais para investigar hipóteses.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CHAMADA FINAL -->
+    <section class="chamada-final">
+      <span class="etiqueta">THE DAILY</span>
+      <h2>Informação para olhar<br>o mundo de outro jeito.</h2>
+      <a href="#" class="botao-assinar">Voltar ao início ↑</a>
     </section>
   </main>
 
   <footer class="rodape">
     <a href="#" class="logo">The<span>Daily.</span></a>
-    <p>Informação em movimento. © 2026 The Daily.</p>
+    <p>Projeto educacional de portal de notícias. © 2026 The Daily.</p>
   </footer>
+
 </body>
 </html>
